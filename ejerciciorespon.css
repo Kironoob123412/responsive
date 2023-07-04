@@ -1,0 +1,60 @@
+:root{
+    --color:blue;
+}
+
+
+.h{
+    color: var(--color);
+    font-size: 1.5rem;
+}
+
+
+.item{
+    background-color: aqua;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: solid 1px red;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.nave{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    
+}
+.navegador {
+    width: 200px;
+    background-color: aqua;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+@media (max-width:640px){
+    .h{
+        font-size: 1rem;
+        
+    }
+    .nave{
+transform: translateY(50vh);
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+    .item{
+        display: flex;
+        justify-content: center;
+    }
+}
